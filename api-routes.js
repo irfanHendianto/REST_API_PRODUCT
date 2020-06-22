@@ -14,4 +14,6 @@ router.route('/editProduct/:no').put(productController.update);
 router.route('/product/:no').delete(productController.delete);  
 router.route('/list/:no').get(productController.detail);  
 
+router.route('/upload').post(productController.upload);  
+
 module.exports = router;
